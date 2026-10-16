@@ -1,0 +1,163 @@
+
+/* Reset Default Spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Background */
+body {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        90deg,
+        #9259a7,
+        #247ebc
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Login Container */
+.login-box {
+    width: 400px;
+    min-height: 450px;
+    max-width: 90%;
+
+    background: linear-gradient(
+        90deg,
+        #78c8ee,
+        #309bc4
+    );
+
+    border-radius: 140px 0 140px 0;
+
+    padding: 45px 45px 40px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+}
+
+/* Sign In Heading */
+.login-box h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+/* Username and Password */
+.login-box form > input {
+    width: 100%;
+    height: 40px;
+
+    background: transparent;
+    border: 3px solid #333;
+    border-radius: 25px;
+
+    padding: 0 14px;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    color: #222;
+    outline: none;
+}
+
+/* Input Placeholder */
+.login-box input::placeholder {
+    color: #e7e7e7;
+}
+
+/* Input Focus Effect */
+.login-box form > input:focus {
+    border-color: white;
+}
+
+/* Remember Me & Forgot Password */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 12px;
+    margin-bottom: 42px;
+
+    font-size: 13px;
+}
+
+/* Remember Me */
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #222;
+    cursor: pointer;
+}
+
+.remember input {
+    accent-color: #333;
+}
+
+/* Forgot Password Link */
+.options a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* Login Button */
+.login-btn {
+    width: 240px;
+    max-width: 100%;
+    height: 52px;
+
+    background: orchid;
+    border: none;
+    border-radius: 30px;
+
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/* Button Hover Effect */
+.login-btn:hover {
+    background: #444;
+    color: white;
+    transform: scale(1.03);
+}
+
+/* Register Section */
+.register {
+    margin-top: 36px;
+    font-size: 11px;
+    color: white;
+}
+
+.register a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px 10px 20px;
+        border-radius: 80px 0 0 0;
+    }
+
+    .login-box h1 {
+        font-size: 10px;
+    }
+
+    .login-btn {
+        font-size: 10px;
+    }
+}
